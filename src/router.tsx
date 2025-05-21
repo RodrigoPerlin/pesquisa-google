@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Google from './pages'
-import FormPost from './components/form-post'
+import FormPost from './pages/form-post'
 
 export function AppRouter() {
   return (

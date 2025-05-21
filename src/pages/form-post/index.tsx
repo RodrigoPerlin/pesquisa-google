@@ -21,7 +21,12 @@ const FormPost = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      
+      style={{
+        display:"flex",
+        flexDirection:"column",
+        gap:5,
+        justifyContent:"center"
+      }}
     >
       <Typography variant="h5" align="center">
         Formulário
