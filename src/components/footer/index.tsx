@@ -10,5 +10,6 @@ export function Footer({ color, text }: FooterProps) {
             display: "flex",
             color: color
         }}>{text}
-        </div>)
+        </div>
+        )
 }

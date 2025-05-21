@@ -1,8 +1,8 @@
 import { Alert, Box, Button } from '@mui/material';
-import { Footer } from './components/footer';
 import { useState } from 'react';
-import { Form } from './components/form';
-export default function App() {
+import { Form } from '../components/form';
+import { Footer } from '../components/footer';
+export default function Google() {
   const [state, setState] = useState("")
   const [oloco, setOloco] = useState({
     "userId": 0,
