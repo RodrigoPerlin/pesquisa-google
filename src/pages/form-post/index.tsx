@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { TextField, Button, Typography } from "@mui/material";
+import { TextField, Button } from "@mui/material";
+import Title from "../../components/title";
 
 const FormPost = () => {
   const [nome, setNome] = useState("");
@@ -9,7 +10,7 @@ const FormPost = () => {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
-    await fetch("https://api.exemplo.com/usuarios", {
+    await fetch("http://localhost:3001/dados", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -28,9 +29,7 @@ const FormPost = () => {
         justifyContent:"center"
       }}
     >
-      <Typography variant="h5" align="center">
-        Formulário
-      </Typography>
+ <Title titulo="Formulario 1"/>
 
       <TextField
         label="Nome"
